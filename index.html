@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="description" content="Kalkaji Lottery play game and lottery results of Kalkaji Lottery find lottery history results">
+  <meta name="author" content="">
+  <title>Kalkaji Lottery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./assets/css/grayscale.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="./assets/css/jquery.slotmachine.css" type="text/css" media="screen" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./assets/js/slotmachine.js"></script>
+<script src="./assets/js/jquery.slotmachine.js"></script>
+  <script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("time").innerHTML=t;
+}
+</script>
+<style>
+    .masthead{
+        background:url(./assets/images/bg-masthead.jpg);
+    }
+</style>
+</head>
+<body id="page-top" ng-app="LottoApp" ng-controller="HomeCtrl">
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container h-100 align-items-center">
+      <div class="row mx-auto text-center mb-m">
+      </div>
+      <div class="row mx-auto text-center">
+        <div class="col mx-auto" style="margin-top: 2px;  background: rgba(74,138,244,.2);">
+          <div class="row">
+            <div class="col">
+              <h2 class="text-white glow"><b>Next Draw</b></h2>
+            </div>
+            <div class="col">
+              <h2 class="text-white glow"><b>Time Left</b></h2>
+            </div>
+            <div class="col">
+              <h2 class="text-white glow"><b>Time Now</b></h2>
+            </div>
+            <div class="col">
+              <h2 class="text-white glow"><b>Date</b></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4 class="text-white glow"><b>
+                11:00 am      <input type="hidden" id="timeleft" value="1198">
+      </b></h4>
+            </div>
+            <div class="col">
+            <script type="text/javascript">
+              function convertSeconds(s) {
+                  var mi = Math.floor(s / 60);
+                  var sec = s % 60;
+                  if(mi < 10 & sec < 10)
+                  var display = '0'+mi + ':0' + sec;
+                  else if(mi > 9 & sec < 10)
+                  var display = mi + ':0' + sec;
+                  else if(mi < 10 & sec > 9)
+                  var display = '0'+mi + ':' + sec;
+                  else
+                  var display = mi + ':' + sec;
+                  return display;
+                }
+                var timeleft = document.getElementById("timeleft").value;
+                var downloadTimer = setInterval(function(){
+                  timeleft--;
+                  if(timeleft >= 0)
+                  document.getElementById("resin").innerHTML = convertSeconds(timeleft);
+                  else
+                  document.getElementById("resin").innerHTML = "waiting...";
+                  if(timeleft == -2)
+                  location. reload();
+                },1000);
+              </script>
+              <h4 class="text-white glow"><b id="resin"></b></h4>
+            </div>
+            <div class="col">
+              <h4 class="text-white glow"><b><span id="time"></span></b></h4>
+            </div>
+            <div class="col">
+              <h4 class="text-white glow"><b>28/05/2024</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-auto text-center">
+        <div class="col mx-auto align-middle" style="margin-top: 2px; background: rgba(255,255,255,.2);">
+        </div>
+      </div>
+      <div class="row mx-auto text-center">
+        <div class="col">
+          <div class="row" style="margin-top: 26px;">
+            <div class="col">
+              <img class="ball" id="wheel1" ng-class="spin_class" src="./assets/images/wheel.png" /><h2 class="text-red glow" style="margin-top: 8px;"><span style="font-size: 36px; line-height: 16px;">AD</span><br><b>10:20: am </b></h2>
+              <!--spin content-->
+          <div id="textMachine" class="result-text ng-binding neon" style="text-align: center;">
+          <div>53</div>
+          <div>19</div>
+          <div style="color:#FF0000;"> 94</div>
+		  <div>63</div>
+		  <div>51</div>
+		  <div>27</div>
+		  <div>57</div>
+		  <div>84</div>
+		  <div>94</div>
+      <div>40</div>
+      <div>33</div>
+		  <div>86</div>
+		  <div>40</div>
+		  <div>41</div>
+		  <div>25</div>
+      <div>43</div>
+      <div>59</div>
+		  <div>12</div>
+		  <div>12</div>
+		  <div>82</div>
+		  <div>86</div>
+      <div>54</div>
+        </div>
+						<script>
+							$("#textMachine").slotMachine({
+							  active: 1,
+							  delay: 450,
+							  auto: 1500,
+							  randomize() {
+								return 2;
+							  }
+							});
+						</script>
+            </div> <!--div col end-->
+            <!--end spin content-->
+            <div class="col">
+              <img class="ball" id="wheel2" ng-class="spin_class" src="./assets/images/wheel.png" /><h2 class="text-red glow" style="margin-top: 8px;"><span style="font-size: 36px; line-height: 16px;">BE</span><br><b>10:20: am </b></h2>
+              <!--spin content-->
+          <div id="textMachine1" class="result-text ng-binding neon" style="text-align: center;">
+          <div>13</div>
+          <div>31</div>
+          <div style="color:#FF0000;"> 80</div>
+		  <div>14</div>
+		  <div>68</div>
+		  <div>39</div>
+		  <div>36</div>
+		  <div>90</div>
+		  <div>27</div>
+      <div>87</div>
+      <div>35</div>
+		  <div>70</div>
+		  <div>97</div>
+		  <div>88</div>
+		  <div>21</div>
+      <div>24</div>
+      <div>46</div>
+		  <div>96</div>
+		  <div>19</div>
+		  <div>76</div>
+		  <div>30</div>
+      <div>96</div>
+        </div>
+						<script>
+							$("#textMachine1").slotMachine({
+							  active: 1,
+							  delay: 450,
+							  auto: 1500,
+							  randomize() {
+								return 2;
+							  }
+							});
+						</script>
+              </div>
+            <div class="col">
+              <img class="ball" id="wheel3" ng-class="spin_class" src="./assets/images/wheel.png" /><h2 class="text-red glow" style="margin-top: 8px;"><span style="font-size: 36px; line-height: 16px;">CF</span><br><b>10:20: am </b></h2>
+              <!--spin content-->
+          <div id="textMachine2" class="result-text ng-binding neon" style="text-align: center;">
+          <div>17</div>
+          <div>61</div>
+          <div style="color:#FF0000;">10</div>
+		  <div>21</div>
+		  <div>50</div>
+		  <div>20</div>
+		  <div>24</div>
+		  <div>53</div>
+		  <div>93</div>
+      <div>10</div>
+      <div>97</div>
+		  <div>96</div>
+		  <div>32</div>
+		  <div>12</div>
+		  <div>65</div>
+      <div>62</div>
+      <div>38</div>
+		  <div>56</div>
+		  <div>79</div>
+		  <div>26</div>
+		  <div>81</div>
+      <div>50</div>
+        </div>
+						<script>
+							$("#textMachine2").slotMachine({
+							  active: 1,
+							  delay: 450,
+							  auto: 1500,
+							  randomize() {
+								return 2;
+							  }
+							});
+						</script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Datatable -->
+   <link href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+   <div class="page_wrap">
+      <!-- banner -->
+      <div id="user">Online: 0</div>
+      <section class="banner_section">
+        <h2 class="banner_heading text-center">Kalkaji Lottery</h2>    
+      </section>
+      <section class="section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="d-flex flex-column text-center">
+                     <div class="img_wrap ">
+                        <button class="btn btn-danger mb-4 p-3">Kalkaji Lottery</button>
+                        <div class="img_box">
+                           <img class="gift_img" src="./assets/images/matka.png" alt="">
+         <span id="count" data-aos="zoom-in" data-aos-easing="ease" data-aos-duration="1000" style="text-align: center; z-index: 1;">
+         81
+         </span>
+                        </div>
+                     </div>
+                     <div class="button_grup mt-4">
+       <button class="btn btn-danger p-3">
+         11:30 AM
+         </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- table 1-->
+      <section class="section pt-0">
+         <div class="container-fluid px_0">
+            <div class="row">
+               <div class="col-md-12" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="table_scroll">
+                     <table id="table" class="table table-hover">
+                        <thead>
+                           <tr >
+                              <th>S.no</th>
+                              <th>Game</th>
+                              <th>Time</th>
+                              <th>Old Number</th>
+                              <th>New Number</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                                                      <tr>
+                              <td>1</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>10:00 AM </td>
+                              <td>01</td>
+                              <td>54</td>
+                           </tr>
+                                                      <tr>
+                              <td>2</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>10:30 AM </td>
+                              <td>80</td>
+                              <td>36</td>
+                           </tr>
+                                                      <tr>
+                              <td>3</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>11:00 AM </td>
+                              <td>72</td>
+                              <td>15</td>
+                           </tr>
+                                                      <tr>
+                              <td>4</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>11:30 AM </td>
+                              <td>26</td>
+                              <td>81</td>
+                           </tr>
+                                                      <tr>
+                              <td>5</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>12:00 PM </td>
+                              <td>68</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>6</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>12:30 PM </td>
+                              <td>16</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>7</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>1:00 PM </td>
+                              <td>83</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>8</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>1:30 PM </td>
+                              <td>20</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>9</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>2:00 PM </td>
+                              <td>39</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>10</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>2:30 PM </td>
+                              <td>57</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>11</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>3:00 PM </td>
+                              <td>85</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>12</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>3:30 PM </td>
+                              <td>75</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>13</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>4:00 PM </td>
+                              <td>17</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>14</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>4:30 PM </td>
+                              <td>51</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>15</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>5:00 PM </td>
+                              <td>63</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>16</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>5:30 PM </td>
+                              <td>59</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>17</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>6:00 PM </td>
+                              <td>04</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>18</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>6:30 PM </td>
+                              <td>25</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>19</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>7:00 PM </td>
+                              <td>84</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>20</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>7:30 PM </td>
+                              <td>30</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>21</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>8:00 PM </td>
+                              <td>59</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>22</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>8:30 PM </td>
+                              <td>21</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>23</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>9:00 PM </td>
+                              <td>07</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>24</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>9:30 PM </td>
+                              <td>13</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>25</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>10:00 PM </td>
+                              <td>61</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>26</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>10:30 PM </td>
+                              <td>54</td>
+                              <td>wait..</td>
+                           </tr>
+                                                      <tr>
+                              <td>27</td>
+                              <td>Kalkaji Lottery</td>
+                              <td>11:00 PM </td>
+                              <td>72</td>
+                              <td>wait..</td>
+                           </tr>
+                                                   </tbody>
+                        <tfoot>
+                        </tfoot>
+                     </table>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-md-2">
+                     <form action="" method="" class=" mt-5">
+                        <select name="year">
+                           <option value="">Select Year</option>
+                           <option value="2023" >2023</option>
+                           <option value="2024" >2024</option>
+                                                       <!--                            <option value="2020">2020</option>
+                                                      <option value="2021">2021</option>
+                                                      <option value="2022">2022</option>
+                                                      <option value="2023">2023</option>
+                                                      <option value="2024">2024</option>
+                                                      <option value="2025">2025</option>
+                                                      <option value="2026">2026</option>
+                                                      <option value="2027">2027</option>
+                                                      <option value="2028">2028</option>
+                                                      <option value="2029">2029</option>
+                                                      <option value="2030">2030</option>
+                                                      <option value="2031">2031</option>
+                                                      <option value="2032">2032</option>
+                                                      <option value="2033">2033</option>
+                                                      <option value="2034">2034</option>
+                                                      <option value="2035">2035</option>
+                            -->
+                        </select>
+                        <button type="submit" class="btn btn-danger m-2 p-3">Search</button>
+                        <button type="submit" class="btn btn-danger m-2 p-3">Search All</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+      </section>
+      <!-- table 2 -->
+      <section class="section pt-0">
+         <div class="container-fluid px_0">
+            <h1 class="fw-bold text-center mb-3" data-aos="flip-left" data-aos-easing="ease" data-aos-duration="1000">
+               Daily Chart</h1>
+            <div class="row">
+               <div class="col-md-12" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="table_scroll">
+                     <table id="table2" class="table table-hover">
+                        <thead>
+                           <tr>
+                              <th>Date</th>
+                                                            <th> 10:00 AM</th>
+                                                            <th> 10:30 AM</th>
+                                                            <th> 11:00 AM</th>
+                                                            <th> 11:30 AM</th>
+                                                            <th> 12:00 PM</th>
+                                                            <th> 12:30 PM</th>
+                                                            <th> 1:00 PM</th>
+                                                            <th> 1:30 PM</th>
+                                                            <th> 2:00 PM</th>
+                                                            <th> 2:30 PM</th>
+                                                            <th> 3:00 PM</th>
+                                                            <th> 3:30 PM</th>
+                                                            <th> 4:00 PM</th>
+                                                            <th> 4:30 PM</th>
+                                                            <th> 5:00 PM</th>
+                                                            <th> 5:30 PM</th>
+                                                            <th> 6:00 PM</th>
+                                                            <th> 6:30 PM</th>
+                                                            <th> 7:00 PM</th>
+                                                            <th> 7:30 PM</th>
+                                                            <th> 8:00 PM</th>
+                                                            <th> 8:30 PM</th>
+                                                            <th> 9:00 PM</th>
+                                                            <th> 9:30 PM</th>
+                                                            <th> 10:00 PM</th>
+                                                            <th> 10:30 PM</th>
+                                                            <th> 11:00 PM</th>
+                                                         </tr>
+                        </thead>
+                        <tbody>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 01-05-2024</td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              13
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              48
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              22
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 02-05-2024</td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              16
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              47
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              87
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              73
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              70
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 03-05-2024</td>
+                                    <td class="">
+                                                                              75
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              26
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              38
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              42
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              95
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 04-05-2024</td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              94
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              22
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              73
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 05-05-2024</td>
+                                    <td class="">
+                                                                              48
+                                    </td>
+                                    <td class="">
+                                                                              23
+                                    </td>
+                                    <td class="">
+                                                                              59
+                                    </td>
+                                    <td class="">
+                                                                              70
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                              70
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 06-05-2024</td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              44
+                                    </td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              38
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              42
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              86
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 07-05-2024</td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              42
+                                    </td>
+                                    <td class="">
+                                                                              44
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              55
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                              45
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              13
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 08-05-2024</td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              11
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              70
+                                    </td>
+                                    <td class="">
+                                                                              22
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              48
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              76
+                                    </td>
+                                    <td class="">
+                                                                              87
+                                    </td>
+                                    <td class="">
+                                                                              87
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 09-05-2024</td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              23
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              76
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              73
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 10-05-2024</td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              98
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              19
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              38
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              55
+                                    </td>
+                                    <td class="">
+                                                                              22
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              76
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              93
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              100
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 11-05-2024</td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              47
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              76
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 12-05-2024</td>
+                                    <td class="">
+                                                                              19
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              94
+                                    </td>
+                                    <td class="">
+                                                                              86
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              99
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 13-05-2024</td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              44
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                              99
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              87
+                                    </td>
+                                    <td class="">
+                                                                              40
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              75
+                                    </td>
+                                    <td class="">
+                                                                              44
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 14-05-2024</td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              48
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              93
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              59
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              87
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 15-05-2024</td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              52
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              37
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 16-05-2024</td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              47
+                                    </td>
+                                    <td class="">
+                                                                              26
+                                    </td>
+                                    <td class="">
+                                                                              21
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              86
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                              86
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              11
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 17-05-2024</td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              45
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              34
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              31
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 18-05-2024</td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                    <td class="">
+                                                                              37
+                                    </td>
+                                    <td class="">
+                                                                              47
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              23
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              22
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              99
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 19-05-2024</td>
+                                    <td class="">
+                                                                              42
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                                 03
+                                    </td>
+                                    <td class="">
+                                                                              15
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              21
+                                    </td>
+                                    <td class="">
+                                                                              92
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 20-05-2024</td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              15
+                                    </td>
+                                    <td class="">
+                                                                              93
+                                    </td>
+                                    <td class="">
+                                                                              55
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                              38
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              69
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              27
+                                    </td>
+                                    <td class="">
+                                                                              11
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                                 05
+                                    </td>
+                                    <td class="">
+                                                                              45
+                                    </td>
+                                    <td class="">
+                                                                              99
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 21-05-2024</td>
+                                    <td class="">
+                                                                              75
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              35
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              62
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              26
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              41
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              94
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              16
+                                    </td>
+                                    <td class="">
+                                                                              70
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              13
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 22-05-2024</td>
+                                    <td class="">
+                                                                              98
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                                 06
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              37
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              32
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              26
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              67
+                                    </td>
+                                    <td class="">
+                                                                              15
+                                    </td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              42
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              93
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              45
+                                    </td>
+                                    <td class="">
+                                                                              46
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 23-05-2024</td>
+                                    <td class="">
+                                                                              97
+                                    </td>
+                                    <td class="">
+                                                                              59
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              93
+                                    </td>
+                                    <td class="">
+                                                                              37
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              44
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                              64
+                                    </td>
+                                    <td class="">
+                                                                              14
+                                    </td>
+                                    <td class="">
+                                                                              77
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              50
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              88
+                                    </td>
+                                    <td class="">
+                                                                                 08
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                    <td class="">
+                                                                              56
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 24-05-2024</td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              99
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              91
+                                    </td>
+                                    <td class="">
+                                                                              89
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              21
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              76
+                                    </td>
+                                    <td class="">
+                                                                              53
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              74
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 25-05-2024</td>
+                                    <td class="">
+                                                                              79
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              49
+                                    </td>
+                                    <td class="">
+                                                                                 09
+                                    </td>
+                                    <td class="">
+                                                                              78
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                    <td class="">
+                                                                                 03
+                                    </td>
+                                    <td class="">
+                                                                              100
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              18
+                                    </td>
+                                    <td class="">
+                                                                              60
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              12
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              28
+                                    </td>
+                                    <td class="">
+                                                                              24
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              23
+                                    </td>
+                                    <td class="">
+                                                                                 02
+                                    </td>
+                                    <td class="">
+                                                                              13
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 26-05-2024</td>
+                                    <td class="">
+                                                                              33
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              58
+                                    </td>
+                                    <td class="">
+                                                                              90
+                                    </td>
+                                    <td class="">
+                                                                              96
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                                                              95
+                                    </td>
+                                    <td class="">
+                                                                              23
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              66
+                                    </td>
+                                    <td class="">
+                                                                              10
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              15
+                                    </td>
+                                    <td class="">
+                                                                              71
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              29
+                                    </td>
+                                    <td class="">
+                                                                              82
+                                    </td>
+                                    <td class="">
+                                                                              65
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              55
+                                    </td>
+                                    <td class="">
+                                                                              43
+                                    </td>
+                                    <td class="">
+                                                                              16
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 27-05-2024</td>
+                                    <td class="">
+                                                                                 01
+                                    </td>
+                                    <td class="">
+                                                                              80
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                    <td class="">
+                                                                              26
+                                    </td>
+                                    <td class="">
+                                                                              68
+                                    </td>
+                                    <td class="">
+                                                                              16
+                                    </td>
+                                    <td class="">
+                                                                              83
+                                    </td>
+                                    <td class="">
+                                                                              20
+                                    </td>
+                                    <td class="">
+                                                                              39
+                                    </td>
+                                    <td class="">
+                                                                              57
+                                    </td>
+                                    <td class="">
+                                                                              85
+                                    </td>
+                                    <td class="">
+                                                                              75
+                                    </td>
+                                    <td class="">
+                                                                              17
+                                    </td>
+                                    <td class="">
+                                                                              51
+                                    </td>
+                                    <td class="">
+                                                                              63
+                                    </td>
+                                    <td class="">
+                                                                              59
+                                    </td>
+                                    <td class="">
+                                                                                 04
+                                    </td>
+                                    <td class="">
+                                                                              25
+                                    </td>
+                                    <td class="">
+                                                                              84
+                                    </td>
+                                    <td class="">
+                                                                              30
+                                    </td>
+                                    <td class="">
+                                                                              59
+                                    </td>
+                                    <td class="">
+                                                                              21
+                                    </td>
+                                    <td class="">
+                                                                                 07
+                                    </td>
+                                    <td class="">
+                                                                              13
+                                    </td>
+                                    <td class="">
+                                                                              61
+                                    </td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              72
+                                    </td>
+                                                               </tr>
+                                                      <tr class="ml32023-10-01 odd">
+                              <td class="dtr-control sorting_1" tabindex="0"> 28-05-2024</td>
+                                    <td class="">
+                                                                              54
+                                    </td>
+                                    <td class="">
+                                                                              36
+                                    </td>
+                                    <td class="">
+                                                                              15
+                                    </td>
+                                    <td class="">
+                                                                              81
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                    <td class="">
+                                    </td>
+                                                               </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Card  -->
+      <section class="section pt-0">
+         <div class="container">
+            <div class="card text-center" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" data-aos-duration="1000">
+               <div class="card-body p-lg-5">
+                  <h1 class="fw-bold">36 Jodi</h1>
+                  <div>
+                                          <span class="pills">18</span>
+                                          <span class="pills">90</span>
+                                          <span class="pills">73</span>
+                                          <span class="pills">27</span>
+                                          <span class="pills">33</span>
+                                          <span class="pills">59</span>
+                                          <span class="pills">5</span>
+                                          <span class="pills">87</span>
+                                          <span class="pills">1</span>
+                                          <span class="pills">30</span>
+                                          <!-- <span class="pills">34</span>
+                     <span class="pills">67</span>
+                     <span class="pills">10</span>
+                     <span class="pills">53</span>
+                     <span class="pills">99</span>
+                     <span class="pills">76</span>
+                     <span class="pills">14</span>
+                     <span class="pills">06</span>
+                     <span class="pills">00</span>
+                     <span class="pills">85</span>
+                     <span class="pills">45</span> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- footer -->
+      <footer>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="copyright_text">
+                     <p>©<span id="year"></span> copyright | Kalkaji Lottery</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- Bootsrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <!-- Data table -->
+   <script src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.13.4/af-2.5.3/b-2.3.6/b-html5-2.3.6/b-print-2.3.6/cr-1.6.2/kt-2.8.2/r-2.4.1/sp-2.1.2/datatables.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- Animation -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- Custom  -->
+   <script>
+      $(document).ready(function() {
+         // $('#table').dataTable();
+         // $('#table2').dataTable();
+         var currentTime = new Date();
+         var hours = currentTime.getHours();
+         var minutes = currentTime.getMinutes();
+         var ampm = hours >= 12 ? 'PM' : 'AM';
+         // Convert to 12-hour format
+         hours = hours % 12;
+         hours = hours ? hours : 12;
+         if (hours < 10) {
+            hours = '0' + hours;
+         }
+         if (minutes < 10) {
+            minutes = '0' + minutes;
+         }
+         var formattedTime = hours + ':' + minutes + ' ' + ampm;
+         $("#currentTime").text(formattedTime);
+         AOS.init();
+         function generate() {
+            var randomNum = Math.floor((Math.random() * 5000) + 1);
+            var el = $('#user');
+            el.html('Online : '+ randomNum); // Generate a new random delay and call generate() again after the delay       
+            var delay = Math.floor(Math.random() * 1000) + 5000;
+            setTimeout(generate, delay);
+         } // Start the automatic generation by calling generate() initially  
+         generate();
+      });
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+   </script>
+</body>
+</html>
